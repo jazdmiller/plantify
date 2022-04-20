@@ -1,0 +1,32 @@
+[
+    {
+        "name":"Golden Pothos",
+        "description": "Pothos is an evergreen plant with thick, waxy, green, heart-shaped leaves with splashes of yellow. As a houseplant, it is commonly grown as a hanging plant. Pothos can climb by means of aerial roots, and wild or cultivated plants grown outdoors can reach enormous heights using tall trees as support.",
+        "img": "https://cdn.shopify.com/s/files/1/0059/8835/2052/products/Golden_Pothos_5_FGT_650x.jpg?v=1626903728"
+    },
+    {
+        "name":"Peace Lily",
+        "description": "Peace lilies make excellent houseplants for the home or office. These lovely plants not only brighten up a living space, but are also excellent at cleaning the air of the room they are in.",
+        "img": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/158014xlx.jpg?width=545&height=597&quality=80&auto=webp&optimize={medium}"
+    },
+    {
+        "name":"Snake Plant",
+        "description": "Snake plant care is very straightforward. These plants can be neglected for weeks at a time; yet, with their strappy leaves and architectural shape, they still look fresh.",
+        "img": "https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_snake-plant-laurentii_small_upcycled-planter-saucer_cream.jpg?v=1649256043"
+    },
+    {
+        "name":"Monstera",
+        "description": "Native to the rainforests of Central America, the big, bold Monstera deliciosa plant is also known as the split-leaf philodendron. This easy-to-grow climbing evergreen can be found in many designer spaces for its wow factor.",
+        "img": "https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_monstera_variant_medium_grant_cream_5b593882-bf40-445c-be26-e8cd6b3ddbe1.jpg?v=1649255645"
+    },
+    {
+        "name":"Boston Fern",
+        "description": "The first thing you need to do for proper Boston fern care is to make sure that it’s in the right kind of environment. Boston ferns need a cool place with high humidity and indirect light.",
+        "img": "https://www.thespruce.com/thmb/oW1QA1gtmRtvznHxCUg3sMM59Dg=/2933x2200/smart/filters:no_upscale()/kararileybostonferns-7-0183dd5556834787aab1407cd7598560.jpg"
+    },
+    {
+        "name":"Anthurium",
+        "description": " The plant is native to Columbia and Ecuador. Anthuriums grow to about 16 inches, making them a perfect indoor plant for desks and floors, as long as pets and children are kept at bay since it is poisonous.",
+        "img": "https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_anthurium-pink_variant_small_bryant_cream.jpg?v=1649187310"
+    }
+]
