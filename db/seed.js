@@ -1,4 +1,9 @@
 const Plant = require('../models/plant')
 const seedData = require('./seeds.json')
 
-console.log(seedData)
+Plant.deleteMany({})
+    .then(() => {
+        Plant.insertMany(seedData)
+            .then(console.log)
+            .catch(console.error)
+    })
