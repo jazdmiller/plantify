@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const mongoURI = 
     process.env.NODE_ENV === 'production' 
     ? process.env.DB_URL
-    : "mongodb+srv://test:test@cluster0.fgrgc.mongodb.net/plantify?retryWrites=true&w=majority"
+    : "mongodb://127.0.0.1:27017/" + "plantify";
 
 mongoose.connect(mongoURI)
     .then((instance) =>
