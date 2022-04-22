@@ -5,7 +5,7 @@ const Ingredient = require('../models/ingredients-models');
 const router = express.Router();
 
 // index/read route - returns all plants
-app.get('/plants', (req, res) => {
+router.get('/plants', (req, res) => {
     Plant.find({})
         .then(data => {
             res.json(data)
@@ -13,14 +13,14 @@ app.get('/plants', (req, res) => {
 })
 
 // create route - adds new plants to model
-app.post('/plants', (req, res) => {
+router.post('/plants', (req, res) => {
     console.log("the create route was reached")
     Plant.create(req.body)
         .then(plant => res.json(plant))
         .catch(err => res.send(err))
 })
 // update route - edit plants
-app.put('/plants/:id', (req, res) => {
+router.put('/plants/:id', (req, res) => {
     Plant.findByIdAndUpdate(
         req.params.id,
         req.body
@@ -35,4 +35,4 @@ app.put('/plants/:id', (req, res) => {
 })
 
 // delete route - delete plants from collection
-app.delete()
+router.delete()
