@@ -21,6 +21,16 @@ body {
     font-family: 'Raleway';
     font-size: 1.5em;
 }
+a {
+    color: #cce00c;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#cce00c; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
 
 .title{
     color: #cce00c;
