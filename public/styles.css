@@ -1,0 +1,89 @@
+body {
+    background-color: bisque;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    grid-gap: 16px;
+}
+
+.cards{
+   border: 1px solid black; 
+   padding: 20px;
+   height: 400px;
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   /* justify-content:space-between; */
+}
+
+.title-font {
+    font-family:'Tangerine';
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+.font {
+    font-family:'Helvetica';
+    text-decoration: none;
+    font-size: 20px; 
+    color: black;
+}
+
+img{
+    border-radius: 5px;
+}
+
+.btnContainer{
+    padding: 20px 0px; 
+}
+
+.btn{
+   padding: 10px;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+
+}
+
+.add{
+    background-color: green;
+    color: black;
+}
+
+.inputContainer{
+    padding: 10px 0px;
+}
+
+.form{
+    width: 50%;
+}
+
+.input{
+    width: 100%;
+}
+
+.cancel{
+    background-color: red;
+    color: white;
+}
+
+.submit{
+    background-color: green;
+    color: white;
+}
+
+.btnParent{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.margin{
+    margin: 0;
+}

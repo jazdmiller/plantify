@@ -1,0 +1,27 @@
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<h1 class="title-font">My Plants</h1>
+
+<div class="btnContainer">
+    <a class="font btn add" href='/new'>Add Plant</a>
+</div>
+
+<div class="container">
+    <% plants.forEach(v => { %>
+    <div class="cards">
+        <div class="title-font"><%=v.name %></div>
+        <img src = '<%=v.img %>' height="200" />
+
+        <div class="btnParent">
+            <a class="btn submit font" href="/<%=v.id%>">view</a>
+            <!-- <a class="font" href="/">delete</a> -->
+
+            <form class="margin" action="/<%=v.id%>?_method=DELETE" method="POST">
+                <input class="btn cancel font"type="submit" value="Delete" />
+            </form>
+        </div>
+    </div>
+
+
+   <% }) %>
+</div>

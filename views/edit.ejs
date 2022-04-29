@@ -1,0 +1,20 @@
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<h1>Edit Plant</h1>
+
+<form class="form" action="<%=id%>?_method=PUT" method="POST">
+
+    <div class="inputContainer">
+        <label class="font" for="name">Name</label>
+        <input class="font input" type="text" name="name" value="<%=name%>"/>
+
+        <label class="font" for="description">Description</label>
+        <input class="font input" type="text" name="description" value="<%=description%>"/>
+
+        <label class="font" for="img">Image</label>
+        <input class="font input" type="text" name="img" value="<%=img%>"/>
+    </div>  
+
+    <input class="font btn submit" type="submit" />
+    <a href="/plants" class="btn cancel font" >Cancel</a>
+</form>

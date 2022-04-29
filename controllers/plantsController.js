@@ -1,38 +1,57 @@
 const express = require('express');
 const { route } = require('express/lib/application')
-const Ingredient = require('../models/ingredients-models');
+const Plant = require('../models/plant');
 
 const router = express.Router();
 
-// index/read route - returns all plants
-router.get('/plants', (req, res) => {
-    Plant.find({})
-        .then(data => {
-            res.json(data)
-        })
+
+router.get('/', (req, res) => {
+    res.render('home')
 })
 
-// create route - adds new plants to model
-router.post('/plants', (req, res) => {
+router.post('/add', (req, res) => {
     console.log("the create route was reached")
     Plant.create(req.body)
-        .then(plant => res.json(plant))
+        .then(() => res.redirect('/plants'))
         .catch(err => res.send(err))
 })
-// update route - edit plants
-router.put('/plants/:id', (req, res) => {
-    Plant.findByIdAndUpdate(
-        req.params.id,
-        req.body
-    )
-    .then(data => {
-        res.json(data)
-    })
-    .catch(err => {
-        console.log(err)
-        res.json(err)
+
+router.get('/plants', (req, res) => {
+    Plant.find({})
+    .then((items) => res.render('index', { plants: items }))
+})
+
+// index/read route - returns all plants
+// app.get('/plants', (req, res) => {
+//     Plant.find({})
+//         .then(data => {
+//             res.render('index', {plant: item})
+//         })
+// })
+
+// create route - adds new plants to model
+
+
+router.delete('/:id', (req, res) => {
+    Plant.findOneAndRemove({ _id: req.params.id})
+    .then(() => res.redirect("/plants"))
+})
+
+router.put('/:id', (req, res) => {
+    Plant.findOneAndUpdate({ _id: req.params.id}, req.body)
+    .then((items) => res.redirect('/plants'))
+})
+
+
+router.get('/new', (req, res) => {
+    res.render('new');
+})
+
+router.get('/:id', (req, res) => {
+    Plant.findById(req.params.id)
+    .then(items => {
+        res.render('edit', items)
     })
 })
 
-// delete route - delete plants from collection
-router.delete()
+module.exports = router;

@@ -1,0 +1,69 @@
+body {
+    width:100%;
+    height: 100%;
+    background-image: url(./assets/pexels-sebastian-sørensen-1276518.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.nav{
+ 
+
+}
+.nav-links{
+    color: #cce00c;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    list-style-type: none;
+    font-family: 'Raleway';
+    font-size: 1.5em;
+}
+
+.title{
+    color: #cce00c;
+    font-size: 5em;
+    letter-spacing: 7px;
+    font-family: 'Tangerine' ;
+    
+}
+
+.container{
+    position:relative;
+    width:90vw;
+    height: 90vh;
+    margin: auto;
+ 
+}
+
+.oval{
+width: 80vh;
+  height: 25vh;
+  background: none;
+  border: 2px solid #cce00c;
+  border-radius: 50%;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+    color: #cce00c;
+    font-size: 1.7em;
+    font-family: 'Raleway';
+
+}
+
+.text{
+    position: absolute;
+    top: 30em; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
