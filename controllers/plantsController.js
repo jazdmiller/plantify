@@ -31,6 +31,12 @@ router.get('/plants', (req, res) => {
 
 // create route - adds new plants to model
 
+router.get('/:id', (req, res) => {
+    Plant.findById(req.params.id)
+    .then(items => {
+        res.render('plant', items)
+    })
+})
 
 router.delete('/:id', (req, res) => {
     Plant.findOneAndRemove({ _id: req.params.id})
@@ -47,11 +53,13 @@ router.get('/new', (req, res) => {
     res.render('new');
 })
 
-router.get('/:id', (req, res) => {
+
+router.get('/edit/:id', (req, res) => {
     Plant.findById(req.params.id)
     .then(items => {
         res.render('edit', items)
     })
 })
+
 
 module.exports = router;
