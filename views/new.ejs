@@ -1,22 +1,42 @@
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="/add.css">
 
-<h1>Add New Plant</h1>
+<section class="container">
+    <div class="image">
+        <h1 class="font welcome">WELCOME</h1>
+        <h1 class="font welcome">TO&emsp;&emsp;THE</h1>
+        <p class="font family">&emsp;family</p>
+    </div>
 
-<form class="form" action="/add" method="POST">
+    <div class="flex">
+        <h1 class="title">Add New Plant</h1>
+    <div class="content">
+    
 
-    <div class="inputContainer">
-        <label class="font" for="name">Name</label>
-        <input class="font input" type="text" name="name"/>
+    <form  class="box" action="/add" method="POST">
 
-        <label class="font" for="description">Description</label>
-        <input class="font input" type="text" name="description"/>
+        <ul class="inputs">
+            <li>
+            <label  for="name">Name</label>
+            <input class=" input" type="text" name="name"/>
+            </li>
 
-        <label class="font" for="img">Image</label>
-        <input class="font input" type="text" name="img"/>
-    </div>  
+            <li>
+            <label  for="description">Description</label>
+            <input class=" input" type="text" name="description"/>
+            </li>
 
-    <input class="font btn submit" type="submit" />
-    <a href="/" class="btn cancel font" >Cancel</a>
-</form>
+            <li>
+            <label  for="img">Image</label>
+            <input class=" input" type="text" name="img"/>
+            </li>
+        </ul>  
 
+        <div class="buttons">
+        <input class=" btn submit" type="submit" />
+        <a href="/" class="btn cancel " >Cancel</a>
+        </div>
+    </form>
+</div>
+</div>
+</section>
 

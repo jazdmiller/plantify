@@ -7,7 +7,7 @@
         </div>
 
         <ul class="nav-links" >
-            <li><a href="/plants">HOME</a></li>
+            <li><a href="/">HOME</a></li>
             <li><a href="/new">ADD</a></li>
         </ul>
     </div>
@@ -21,21 +21,19 @@
 
 <div class="container">
     <% plants.forEach(v => { %>
-    <div class="cards">
-        <div class="title-font"><%=v.name %></div>
+    <div class="cards animate">
         <img src = '<%=v.img %>' height="200" />
+        <div class="title-font"><%=v.name %></div>
         <div class="textContainer">
             <span class="description"><%=v.description%></span>
         </div>
 
         <div class="btnParent">
             <a class="btn " href="/<%=v.id%>">View</a>
+  
             <!-- <a class="font" href="/">delete</a> -->
 
-            <form class="margin" action="/<%=v.id%>?_method=DELETE" method="POST">
-                <input class="btn "type="submit" value="Delete" />
-            </form>
-        </div>
+        </div> 
     </div>
 
 

@@ -1,20 +1,41 @@
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="/edit.css">
 
-<h1>Edit Plant</h1>
+<section class="container">
 
-<form class="form" action="<%=id%>?_method=PUT" method="POST">
+        <div class="info-div">
+            <h1 class="title">Edit Plant</h1>
+            <div class="content">
 
-    <div class="inputContainer">
-        <label class="font" for="name">Name</label>
-        <input class="font input" type="text" name="name" value="<%=name%>"/>
+                <form class="box" action="<%=id%>?_method=PUT" method="POST">
+                    <ul class="inputs">
+                        <li>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" value="<%=name%>"/>
+                        </li>
 
-        <label class="font" for="description">Description</label>
-        <input class="font input" type="text" name="description" value="<%=description%>"/>
+                        <li>
+                        <label for="description">Description</label>
+                        <input  type="text" name="description" value="<%=description%>"/>
+                        </li>
 
-        <label class="font" for="img">Image</label>
-        <input class="font input" type="text" name="img" value="<%=img%>"/>
-    </div>  
+                        <li>
+                        <label for="img">Image</label>
+                        <input type="text" name="img" value="<%=img%>"/>
+                        </li>
+                    </ul>
 
-    <input class="font btn submit" type="submit" />
-    <a href="/plants" class="btn cancel font" >Cancel</a>
-</form>
+                        <div class="buttons">
+                        <input class="btn" type="submit" />
+                        <a class=" btn cancel"href="/plants" >Cancel</a>
+                        </div>
+                    </div>  
+
+                  
+                </form>
+        </div>
+    </div>
+
+        <div class="image"> </div>
+
+
+</section>

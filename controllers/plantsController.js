@@ -20,6 +20,9 @@ router.get('/plants', (req, res) => {
     Plant.find({})
     .then((items) => res.render('index', { plants: items }))
 })
+router.get('/new', (req, res) => {
+    res.render('new');
+})
 
 // index/read route - returns all plants
 // app.get('/plants', (req, res) => {
@@ -43,15 +46,13 @@ router.delete('/:id', (req, res) => {
     .then(() => res.redirect("/plants"))
 })
 
-router.put('/:id', (req, res) => {
+router.put('/edit/:id', (req, res) => {
     Plant.findOneAndUpdate({ _id: req.params.id}, req.body)
     .then((items) => res.redirect('/plants'))
 })
 
 
-router.get('/new', (req, res) => {
-    res.render('new');
-})
+
 
 
 router.get('/edit/:id', (req, res) => {

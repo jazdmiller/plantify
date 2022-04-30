@@ -1,0 +1,123 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+
+.info-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image{
+    background-image: url(./assets/augustine-wong-T0BYurbDK_M-unsplash.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+    min-height: 0;
+    min-width: 0;
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    width: 500px;
+    background-color: #73746f;
+  
+}
+
+.inputs{
+    list-style-type:armenian;
+    padding: 0;
+ 
+}
+
+.inputs li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.inputs > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .inputs li label,
+  .inputs li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+
+  .inputs > li > label,
+.inputs li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.inputs > li > label + *{
+    flex: 1 0 220px;
+  }
+  
+.inputs li p {
+    margin: 0;
+  }
+
+  .inputs li input:not([type='checkbox']),
+  .inputs li textarea {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+
+  .btn{
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+    font-size: 20px;
+    font-family: 'Raleway';
+    cursor: pointer;
+   }
+
+   .buttons{
+    padding:22px;
+}
+
+
+.title{
+    text-align: center;
+    color: black;
+    font-size: 2.3em;
+    text-transform: uppercase;
+    font-family: 'Tangerine' ;
+  }
+
+  a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#f2f2f2; 
+    text-decoration:none; 
+    cursor:pointer;  
+}

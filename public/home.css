@@ -37,9 +37,29 @@ a:hover {
     font-size: 5em;
     letter-spacing: 7px;
     font-family: 'Tangerine' ;
-    
 }
 
+.animate{
+    animation: 3.5s anim-animate ease-out ;
+}
+
+@keyframes anim-animate {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 .container{
     position:relative;
     width:90vw;
@@ -60,7 +80,13 @@ width: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeIn linear 3s;
 }
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
 p{
     color: #cce00c;

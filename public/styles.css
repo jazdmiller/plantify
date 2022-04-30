@@ -3,7 +3,27 @@ body {
     margin:0;
     padding: 0;
 }
+.animate{
+    animation: 2s anim-animate ease-out ;
+}
 
+@keyframes anim-animate {
+    0% {
+      opacity: .2;
+      transform: translateY(50%);
+    }
+    20% {
+      opacity: .3;
+    }
+    50% {
+      opacity: .6;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 .banner{
     position: relative;
     background-image: url(./assets/pexels-sebastian-sørensen-1276518.jpg);
@@ -20,8 +40,8 @@ body {
     font-family: 'Raleway';
     padding-right: 80px;
     padding-left: 80px;
-    padding-top: 60px;
-    font-size: 1.6em;
+    padding-top: 40px;
+    font-size: 1.em;
     margin:0;
     letter-spacing: 3px;
 }
@@ -31,15 +51,16 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color:#cce00c; 
+.btn:hover {
+    color:white; 
+    background-color: black;
     text-decoration:none; 
     cursor:pointer;  
 }
 
 .oval{
-    width: 40vh;
-      height: 12vh;
+    width: 25vh;
+      height: 7vh;
       background: none;
       border: 2px solid #cce00c;
       border-radius: 50%;
@@ -53,7 +74,7 @@ a:hover {
 
     .title{
         color: #cce00c;
-        font-size: 2.3em;
+        font-size: 1.3em;
         letter-spacing: 5px;
         font-family: 'Tangerine' ;
     }
@@ -64,6 +85,7 @@ a:hover {
     justify-content: center;
     grid-template-columns: repeat(3, minmax(300px, 300px));
     grid-gap: 40px;
+   
 }
 
 .cards{
@@ -73,6 +95,8 @@ a:hover {
    border-radius: 5px;
    display: flex;
    flex-direction: column;
+   box-shadow: 8px 8px 5px gray;
+   transition: bottom 1s ease;
    /* justify-content:space-between; */
 }
 
@@ -80,7 +104,7 @@ a:hover {
     font-family:'Tangerine';
     text-decoration: none;
     font-size: 20px;
-    padding-bottom: 20px;
+    padding-top: 20px;
     text-align: center;
     text-transform: uppercase;
 

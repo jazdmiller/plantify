@@ -2,16 +2,25 @@
 <link rel="stylesheet" type="text/css" href="plant.css">
 
 <section class="container">
-    <div class="image">
+    <div class="image animate">
         <div class="box">
             <img src="<%=img%>" width="400"height="500">
         </div>
     </div>
     <div class="content">
-        <h1 class="title"><%=name%></h1>
-        <img src="/assets/images/leaf.png" height="90" width="90"/>
-        <div class="text-box" >
+        <h1 class="title animate"><%=name%></h1>
+        <img class="animate"src="/assets/images/leaf.png" height="90" width="90"/>
+        <div class="text-box animate" >
             <p><%=description%></p>
         </div>
+        <div class="btn-parent animate">
+        <a class="btn" href="/edit/<%=id%>">Edit</a>
+        <form class="margin"action="/<%=id%>?_method=DELETE" method="POST">
+            <input class="btn delete" type="submit" value="Delete" />
+        </form>
+    </div>
+    <div class="back animate">
+        <a href="/plants">Back</a>
+    </div>
     </div>    
 </section>
